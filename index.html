@@ -356,6 +356,18 @@
             </li>
           </ul>
         </div>
+        <form class="subscribe-form">
+          <label for="subscribe">Subscribe</label>
+          <div class="subscribe-input-button">
+            <input type="email" name="subscribe" id="subscribe" placeholder="E-mail" />
+            <button type="submit">
+              Subscribe
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-subscribe-button"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -365,6 +377,34 @@
             <use href="./images/icons.svg#icon-modal-button-close"></use>
           </svg>
         </button>
+        <p class="backdrop-header">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <label class="labels-style" for="name-field">Name</label>
+          <div class="inputs-wrapper">
+            <input class="inputs-style" type="text" name="name-field" id="name-field" />
+            <svg class="inputs-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-modal-person-black"></use>
+            </svg>
+          </div>
+          <label class="labels-style" for="phone-field">Phone</label>
+          <div class="inputs-wrapper">
+            <input class="inputs-style" type="tel" name="phone-field" id="phone-field" />
+            <svg class="inputs-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-modal-phone-black"></use>
+            </svg>
+          </div>
+          <label class="labels-style" for="email-field">Email</label>
+          <div class="inputs-wrapper">
+            <input class="inputs-style" type="email" name="email-field" id="email-field" />
+            <svg class="inputs-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-modal-email-black"></use>
+            </svg>
+          </div>
+          <label class="labels-style" for="comment-field">Comment</label>
+          <textarea class="comment-field-style" name="comment-field" id="comment-field" placeholder="Text input"></textarea>
+
+          <button class="modal-button-send" type="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
