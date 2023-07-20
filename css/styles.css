@@ -752,12 +752,12 @@ main {
   outline: transparent;
 }
 .checkbox-label-wrapper {
+  /* display: flex;
+  align-items: center; */
   font-size: 12px;
   line-height: 1.17; /* 116.667% */
   letter-spacing: 0.04em;
   color: var(--lightslate);
-  display: flex;
-  align-items: center;
 }
 
 .checkbox-input:checked + .checkbox-label-wrapper .checkbox-icon-style {
