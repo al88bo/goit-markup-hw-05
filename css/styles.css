@@ -620,7 +620,7 @@ main {
   padding: 72px 24px 24px;
 }
 
-.backdrop.is-hidden .modal-window {
+.backdrop.is-hidden .modal-window-container {
   transform: translate(-50%, -50%) scale(10);
 }
 
@@ -820,6 +820,7 @@ main {
 
 .a-style {
   color: var(--iris);
+  text-decoration: underline;
 }
 .modal-button-send {
   display: block;
