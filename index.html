@@ -413,12 +413,13 @@
             <textarea class="comment-style" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
           </div>
           <div class="modal-checkbox-container">
-            <input class="visually-hidden" type="checkbox" name="user-privacy" value="true" />
-            <label class="checkbox-label-style" for="user-privacy"
-              >I accept the terms and conditions of the<span class="span-style"
-                ><svg class="svg-style" width="10" height="8">
-                  <use href="./images/icons.svg#icon-modal-privacy"></use></svg></span
-              ><a class="a-style" href="">Privacy Policy</a>
+            <input class="checkbox-input visually-hidden" type="checkbox" name="user-privacy" id="user-privacy" value="true" />
+            <label class="checkbox-label-wrapper" for="user-privacy"
+              ><span class="checkbox-icon-style">
+                <svg width="10" height="8">
+                  <use href="./images/icons.svg#icon-modal-privacy"></use>
+                </svg> </span
+              >I accept the terms and conditions of the <a class="a-style" href=""> Privacy Policy</a>
             </label>
           </div>
           <button class="modal-button-send" type="submit">Send</button>

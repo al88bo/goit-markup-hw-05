@@ -38,6 +38,7 @@ a {
 }
 button {
   padding: 0;
+  outline: transparent;
   cursor: pointer;
   border: none;
   font-family: inherit;
@@ -221,7 +222,7 @@ main {
 .hero-button:hover,
 .hero-button:focus,
 .modal-button-send:hover,
-.madal-button-send:focus {
+.modal-button-send:focus {
   background-color: var(--ocean);
 }
 
@@ -722,7 +723,7 @@ main {
   font-size: 12px;
   line-height: 1.17; /* 116.667% */
   letter-spacing: 0.04em;
-  color: var(--navyblue);
+  color: var(--navyblue-modal);
   border: 1px solid var(--navyblue-modal);
   border-radius: 4px;
   background-color: transparent;
@@ -747,34 +748,76 @@ main {
   letter-spacing: 0.04em;
   margin-bottom: 16px;
 }
+
 .modal-checkbox-container {
-  border: 1px solid red;
   margin-bottom: 24px;
 }
-
-.checkbox-label-style {
-  border: 1px solid green;
+.checkbox-input {
+  outline: transparent;
+}
+.checkbox-label-wrapper {
   font-size: 12px;
   line-height: 1.17; /* 116.667% */
   letter-spacing: 0.04em;
   color: var(--lightslate);
+  display: flex;
+  align-items: center;
 }
+.checkbox-input:checked + .checkbox-label-wrapper .checkbox-icon-style {
+  fill: var(--cloud);
+  background-color: var(--ocean);
+  border: none;
+}
+/* .checkbox-input:focus + .checkbox-label-wrapper .checkbox-icon-style,
+.checkbox-input:hover + .checkbox-label-wrapper .checkbox-icon-style {
+  border: none;
+} */
 
-.span-style {
+.checkbox-icon-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 16px;
   height: 16px;
+  margin-right: 8px;
   border: 1px solid var(--navyblue-modal);
   border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
   fill: transparent;
 }
-
-.svg-style {
-  border: 1px solid blue;
+/* 
+.check-text:before {
+  content: '';
+  width: 40px;
+  height: 22px;
+  border: 1px solid #ada8a8;
+  border-radius: 50px;
+  margin-right: 10px;
+  transition-duration: 300ms;
 }
+
+.check-text::after {
+  content: '';
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background-color: #cec9c9;
+  border-radius: 50%;
+  transition-duration: 300ms;
+}
+
+.modal-check:checked + .check-text::after {
+  transform: translate(18px);
+  background-color: #ffffff;
+}
+
+.modal-check:checked + .check-text::before {
+  background-color: #c1e4ba;
+  border-color: #dbd7d7;
+} */
+
 .a-style {
   color: var(--iris);
 }
